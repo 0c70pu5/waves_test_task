@@ -1,0 +1,18 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/*
+<PROJECT_ROOT>/build/*
+<PROJECT_ROOT>/doc/*
+<PROJECT_ROOT>/doc/*
+
+[include]
+
+[libs]
+
+[options]
+# .flowconfig
+
+[options]
+module.system.node.resolve_dirname=node_modules
+module.system.node.resolve_dirname=client
+
+[lints]

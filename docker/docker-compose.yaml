@@ -1,0 +1,9 @@
+version: '3'
+services:
+  test_task:
+      build:
+         context: ../
+         dockerfile: ./docker/Dockerfile
+      container_name: test_task
+      ports:
+         - "80:3000"

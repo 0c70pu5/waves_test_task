@@ -1,0 +1,27 @@
+$m-control-scroll() {
+  // the entire scrollbar.
+  &::-webkit-scrollbar {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 6px;
+  }
+  // the draggable scrolling handle
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+    &:hover{
+      background-color: rgba(0, 0, 0, .4);
+    }
+  }
+  // the track (progress bar) of the scrollbar
+  &::-webkit-scrollbar-track {
+    background: $c-border;
+    border-radius: 4px;
+  }
+  // the buttons on the scrollbar (arrows pointing upwards and downwards)
+  &::-webkit-scrollbar-button {
+    width: 4px;
+    height: 4px;
+  }
+}

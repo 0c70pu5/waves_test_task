@@ -1,0 +1,41 @@
+class = list
+
+.{class} {
+  width: 100%;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  &, th, td {
+    border: none;
+  }
+
+  thead {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  tr {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+  }
+
+  td, th {
+    padding: 15px 10px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+  }
+
+  tbody > tr {
+    transition: background-color .25s ease;
+  }
+
+  tbody > tr:hover {
+    background-color: rgba(242,242,242,0.5);
+  }
+
+  td.{class}__empty {
+    text-align: center;
+
+  }
+}

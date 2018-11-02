@@ -1,0 +1,6 @@
+bin/
+build/
+doc/
+node_modules/
+static/
+webpack/

@@ -1,0 +1,9 @@
+$m-stretch-container($align = middle) {
+  &:before {
+    display inline-block;
+    vertical-align unquote($align);
+    height: 100%;
+    content: ""
+    width: 0
+  }
+}

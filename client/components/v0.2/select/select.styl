@@ -1,0 +1,106 @@
+class = select
+
+.{class} {
+/*  position relative;
+  transition: all ease 1s;
+  border: 1px solid transparent;*/
+  position: relative;
+  display: block;
+  width: 100%;
+  outline: none;
+  padding: 16px 0 0 0;
+  box-sizing: border-box;
+  color: rgba(0,0,0,0.8);
+  font-size: 20px;
+  border: none;
+  border-bottom: 1px solid #DDD;
+  background-color: transparent;
+  background: -webkit-linear-gradient(bottom, #51BBBE 50%, #51BBBE 50%);
+  background: linear-gradient(to top, #51BBBE 50%, #51BBBE 50%);
+  background-position: left bottom;
+  background-size: 0 1px;
+  background-repeat: no-repeat;
+  transition: all .2s ease-in-out;
+  &:hover, &:focus {
+    border-color: #51BBBE;
+  }
+  &:focus {
+    outline: none;
+    background-position: left bottom;
+    background-size: 100% 1px;
+  }
+
+  &:focus {
+    outline: none;
+
+    .{class}__selected {
+      outline: none;
+    }
+
+    .{class}__placeholder {
+
+    }
+  }
+  &:hover {
+
+  }
+
+  &__selected {
+    color: $c-text;
+    padding: 6px 0;
+    box-sizing border-box;
+    min-height: 33px;
+    font-size: 20px;
+  }
+
+  &__list {
+    position: absolute;
+    top: calc(100% + 1px);
+    left: 0;
+    min-width: 100%;
+    text-align: left;
+    background-color: white;
+    border: 1px solid $c-border;
+    border-top: none;
+    z-index: 500;
+    box-shadow: 0 30px 90px -20px rgba(0, 0, 0, 0.3);
+    overflow-y: auto;
+    max-height: 210px;
+    box-sizing: border-box;
+    $m-control-scroll();
+
+    &--hidden {
+      display: none;
+    }
+  }
+
+  &__item {
+    padding: 8px 16px;
+    font-size: 14px;
+    line-height: 14px;
+    min-height: 30px;
+    box-sizing: border-box;
+    outline: none;
+
+    &--current {
+      background-color: #7f7f7f;
+      color: #e3e3e3;
+    }
+
+    &--focus {
+      background-color: #51BBBE;
+      color: #DDD;
+    }
+
+    &:hover {
+      background-color: $c-brand-lightest;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+  &__placeholder {
+    color: #DDD;
+    $m-unselectable();
+  }
+}
